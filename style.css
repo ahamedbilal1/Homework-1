@@ -8,7 +8,11 @@ html{
 }
 .content{
     height: fit-content;
-    background:linear-gradient(rgb(4, 26, 71),rgb(70, 70, 228));
+    background:linear-gradient(rgb(242, 166, 66),rgb(228, 61, 186));
+}
+
+a{
+    text-decoration: none;
 }
 
 .content nav{
@@ -16,7 +20,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid white;
 }
 .ls{
     display: flex;
@@ -29,16 +33,19 @@ html{
     cursor: pointer;
 }
 .ls img{
-    height: 6vh;
+    height: 13vh;
     margin: 5px;
     margin-left: 10vw;
     margin-right: 30px;
+    background-image: transparent;
 }
 .ls input {
     margin: 5px;
     width: 20vw;
     padding: 5px;
     border-radius: 5px;
+    background:rgb(242, 166, 66);
+    border-color: white;
 }
 .ls ul {
     display: flex;
@@ -51,7 +58,6 @@ html{
     color: white;
     margin-right: 5vw;
     cursor: pointer;
-    background-color: gold;
     padding: 8px;
     border-radius: 5px;
 }
@@ -60,7 +66,8 @@ html{
     padding: 8px;
     color: white;
     cursor: pointer;
-    background-color: gold;
+    background-color: rgb(242, 166, 66);
+    border-color: white;
     padding: 8px;
     border-radius: 5px;
 }
@@ -70,52 +77,245 @@ html{
     height: 92vh;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid white;
 }
 
-#hero-page h1{
-    color: gold;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-size: 98px;
-    font-weight: 250;
-}
 
-.left {
+
+.left_hero {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.left img {
-    height: 30vh;
-    margin-top: 30px;
+
+.logo-input input {
+    color: white;
+}
+.left_hero img {
+    height: 75vh;
+    margin-top: -50px;
 }
 
-.right {
+.right_hero {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
 #hero-page p{
-    color:gold;
+    color:white;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-size: 35px;
-    font-weight: 350;
+    font-weight: 150;
+    margin-right: 5vw;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding:10px;
+    /* background: red */
 }
 
-.name {
-    display:flex;
-    justify-content:center;
+/* About Page */
+#about{
+    height: 50vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid white;
+}
+
+#about h1{
+    color:white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 250;
+}
+
+.left_about {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: x-large;
+    flex-direction: column;
 }
-.name input {
-    margin-left: 10px;
-    font-size: x-large;
+
+.left_about img {
+    height: 45vh;
 }
+
+.right_about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about p{
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 175;
+    margin-right: 5vw;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+/* Pricing */
+#pricing{
+    height: 50vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid white;
+}
+
+#pricing h1 {
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 250;
+}
+
+.left_price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left_price img {
+    height: 30vh;
+}
+
+.right_price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pricing p{
+    color:white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 175;
+    margin-right: 5vw;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+/* Reviews */
+#rev_pg{
+    height: 50vh;
+    border-bottom: 2px solid white;
+}
+.rev_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#rev_pg h1 {
+    text-align: center;
+    margin: 5vh;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 250;
+}
+
+.rev_img img {
+    height: 195px;
+    margin: 2vh;
+    border-radius: 10px;
+}
+
+
+/* Contact Us */
+#contact {
+    height: fit-content;
+    border-bottom: 2px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact h1 {
+    text-align: center;
+    margin: 5vh;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 250;
+}
+
+#contact h3 {
+    text-align: center;
+    margin-bottom: 2vh;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 250;
+}
+
+.button-cu button {
+    padding: 8px;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+}
+.button-cu {
+    text-align: center;
+}
+
+.textboxes {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: white 1px solid;
+    border-radius: 30px;
+    margin-bottom: 5vh;
+    background: transparent;
+
+}
+
+.textboxes textarea, .textboxes input {
+    width:100%;
+    margin-bottom: 5vh;
+
+}
+.textboxes textarea {
+    height: 30vh;
+}
+
+
+/* Clapping */
+#clapping-closing {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+#clapping-closing a {
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 250;
+}
+
+
+/* Disclaimer */
 
 #disclaimer p{
     color: white;
@@ -123,9 +323,50 @@ html{
     text-align: center;
     font-size: large;
     font-weight: 250;
+    padding-bottom: 10vh;
 }
 
+.closing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+    flex-direction: column;
+    padding-bottom: 15vh;
+}
 
-/* center in middle: display flex; justify content center; align item center; */
+@media (max-width: 786px) { 
+    #hero-page{
+        grid-template-columns: 1fr;
+    }
+    #about{
+        grid-template-columns: 1fr;
+    }
+    #pricing{
+        grid-template-columns: 1fr;
+    }
 
-/* git add . ; git committ -m "blah" ; git push*/
+    #hero-page, #about, #pricing, #rev_pg, #contact {
+        height: fit-content;
+    }
+
+    #hero-page p, #about p, #pricing p {
+        margin-right: 0;
+    }
+
+    .ls img {
+        margin-left: 1vh;
+    }
+
+    .ls ul {
+        display: none;
+    }
+
+    .ls {
+        justify-content: space-evenly;
+    }
+
+    .ls input {
+        width:40vw;
+    }
+}

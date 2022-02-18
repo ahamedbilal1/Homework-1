@@ -15,44 +15,107 @@
             <div class="ls">
                 <div class="logo-input">
                     <a href="#hero-page">
-                        <img src="https://cdn.pixabay.com/photo/2017/02/27/20/48/headphones-2104207_1280.png"/>
+                        <img alt= "logo2" src="/images/2.png"/>
                     </a>
                     <input placeholder="Type a song" type="text">
 
                 </div>
                 <ul>
-                    <li>About</li>
-                    <li>Pricing</li>
-                    <li>Reviews</li>
-                    <li>Contact Us</li>
-
+                    <div class = "about-ref"> 
+                        <a href="#about"> 
+                            <li>About</li>
+                        </a>
+                    </div>
+                    <div class = "pricing-ref"> 
+                        <a href="#pricing"> 
+                            <li>Pricing</li>
+                        </a>
+                    </div>
+                    <div class = "reviews-ref">
+                        <a href = "#rev_pg">
+                            <li>Reviews</li>
+                        </a>
+                    </div>
+                    <div class = "cu-ref">
+                        <a href = "#contact">
+                            <li>Contact Us</li>
+                        </a>
+                    </div>
+                    
                 </ul>
                 <button>Sign In</button>
             </div>
         </nav>
 
         <div id="hero-page">
-            <div class = "left">
-                <h1>Welcome to Music Rater</h1>
-                <img src="https://cdn.pixabay.com/photo/2017/02/27/20/48/headphones-2104207_1280.png"/>
+            <div class = "left_hero">
+                <img alt="logo" src="images/1.png"/>
             </div>
-            <div class = "right">
+            <div class = "right_hero">
                 <p>Are you tired of listening to the same music? </p>
                 <p>Do you need some music suggestions? </p>
                 <p>You've come to the right page. Here on Music Rater, you can rate any music you would like. </p>
             </div>
         </div>
-        <div id="about"></div>
-        <div id="pricing"></div>
-        <div id="reviews"></div>
+        
+        <div id="about">
+            <div class = "left_about">
+                <img alt="Question" src= "/images/question-mark.png"/>
+            </div>
+            <div class= "right_about">
+                <p>Hello, this is a Music rating App that is designed to search for your favorite music and rate them.</p>
+                <p>If your favorite music is not there, you can easily add it to our database and feel free to rate it.</p>
+                <p>Make sure to include the Title, Artist, and Year when adding a new submission.</p>
+            </div>
+        </div>
+
+        <div id="pricing">
+            <div class = "left_price">
+                <img alt= "Price" src= "images/price.png"/>
+            </div>
+            <div class= "right_price">
+                <p> Do you think you have to pay for this service? If you said "Yes", think again.</p>
+                <p> Music Rater is completely free to use. You do not have to pay for anything.</p>
+                <p> But, if you are feeling like giving something, feel free to donate. Just fill out the Contact Us form.</p>
+            </div>
+        </div>
+
+        <div id="rev_pg">
+            <h1>Reviews</h1>
+            <div class= "rev_img">
+                <img alt= "Review 1" src = "./images/Review-1.png"/>
+                <img alt= "Review 2" src = "./images/Review-2.png"/>
+                <img alt= "Review 3"src = "./images/Review-3.png"/>
+            </div>
+        </div>
+
         <div id="contact">
-            <div class= "name">
-                <p>Name:</p> 
-                <input placeholder="Enter your name:" type ="text">
+            <h1>Contact Us</h1>
+            <div class = "textboxes">
+                    <h3 class= "cu-title"> Name:</h3> 
+                    <input placeholder="Enter your Name:" type ="text">
+
+                    <h3 class= "cu-title"> Email:</h3>  
+                    <input placeholder="Enter your Email:" type ="email">
+
+                    <h3 class= "cu-title"> Subject:</h3> 
+                    <textarea placeholder="Write Something .." type ="text"></textarea>
+
+                    <div class = "button-cu">
+                        <button>Submit</button>
+                    </div>
             </div>
             
         </div>
-        
+
+        <div id="clapping-closing">
+            <a href="index2.html">
+                Click Here for a Suprise
+            </a>
+
+        </div>
+            
+
         <div id="disclaimer">
             <p> “This site was designed and published as part of the COMP
                 333 Software Engineering class at Wesleyan University. The described platform is not publicly
